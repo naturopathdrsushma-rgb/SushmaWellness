@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+
+<title>Dr. Sushma Vishwakarma | Sushma Wellness</title>
+
+<meta name="description" content="Holistic Wellness through Yoga, Meditation, Naturopathy, Detox Therapies and Lifestyle Transformation.">
+
+<meta property="og:title" content="Dr. Sushma Vishwakarma | Sushma Wellness">
+<meta property="og:description" content="Heal Naturally. Live Fully. Transform Completely.">
+<meta property="og:type" content="website">
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<script>
+tailwind.config = {
+  darkMode: 'class'
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+body{
+font-family:'Poppins',sans-serif;
+}
+
+.hero-bg{
+background:
+linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+url('images/hero.jpeg');
+background-size:cover;
+background-position:center;
+}
+
+.glass{
+backdrop-filter:blur(10px);
+background:rgba(255,255,255,.08);
+}
+
+.service-card:hover{
+transform:translateY(-8px);
+}
+
+.fade{
+opacity:0;
+transform:translateY(20px);
+transition:.6s;
+}
+
+.fade.show{
+opacity:1;
+transform:translateY(0);
+}
+</style>
+</head>
+
+<body class="bg-white dark:bg-slate-900 text-slate-800 dark:text-white">
+
+<!-- NAVBAR -->
+
+<nav class="fixed top-0 left-0 w-full z-50 bg-white/90 dark:bg-slate-900/90 backdrop-blur shadow">
+<div class="max-w-7xl mx-auto px-6">
+<div class="flex justify-between items-center py-4">
+<a href="#" class="flex items-center gap-3">
+<img src="images/logo.png" class="h-12" alt="Sushma Wellness logo">
+<span class="font-bold text-xl">Sushma Wellness</span>
+</a>
+
+<div class="hidden md:flex gap-8">
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#demos">Demos</a>
+<a href="#gallery">Gallery</a>
+<a href="#youtube">Videos</a>
+<a href="#contact">Contact</a>
+</div>
+
+<div class="flex gap-3">
+<button id="themeBtn" class="px-4 py-2 rounded-lg bg-purple-600 text-white" aria-label="Toggle dark mode">
+&#127769;
+</button>
+<button id="menuBtn" class="md:hidden text-2xl" aria-label="Open menu">
+&#9776;
+</button>
+</div>
+</div>
+
+<div id="mobileMenu" class="hidden pb-5 md:hidden flex-col gap-3">
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#demos">Demos</a>
+<a href="#gallery">Gallery</a>
+<a href="#youtube">Videos</a>
+<a href="#contact">Contact</a>
+</div>
+</div>
+</nav>
+
+<!-- HERO -->
+
+<section id="home" class="hero-bg min-h-screen flex items-center justify-center text-center text-white">
+<div class="max-w-4xl px-6">
+<h1 class="text-5xl md:text-7xl font-bold mb-6">Dr. Sushma Vishwakarma</h1>
+<p class="text-xl md:text-2xl mb-8">Heal Naturally. Live Fully. Transform Completely.</p>
+<div class="flex flex-wrap justify-center gap-4">
+<a href="#contact" class="bg-yellow-500 px-8 py-4 rounded-xl font-semibold">Book Consultation</a>
+<a href="#services" class="border border-white px-8 py-4 rounded-xl">Explore Services</a>
+</div>
+</div>
+</section>
+
+<!-- ABOUT -->
+
+<section id="about" class="py-24">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid md:grid-cols-2 gap-12 items-center">
+<img src="images/about.jpeg" class="rounded-3xl shadow-2xl" alt="Dr. Sushma wellness consultation">
+<div>
+<h2 class="text-4xl font-bold mb-6">About Dr. Sushma</h2>
+<p class="leading-8 text-lg">
+Dr. Sushma Vishwakarma is a dedicated Naturopathy and Wellness Practitioner helping individuals achieve holistic well-being through Yoga, Meditation, Detox Therapies, Natural Healing and Lifestyle Transformation.
+</p>
+<div class="mt-8 grid grid-cols-2 gap-4">
+<div class="p-5 rounded-xl bg-purple-100 dark:bg-slate-800">Yoga Therapy</div>
+<div class="p-5 rounded-xl bg-green-100 dark:bg-slate-800">Meditation</div>
+<div class="p-5 rounded-xl bg-yellow-100 dark:bg-slate-800">Naturopathy</div>
+<div class="p-5 rounded-xl bg-purple-100 dark:bg-slate-800">Detox Programs</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- SERVICES -->
+
+<section id="services" class="py-24 bg-slate-100 dark:bg-slate-800">
+<div class="max-w-7xl mx-auto px-6">
+<h2 class="text-center text-4xl font-bold mb-14">Services</h2>
+<div class="grid md:grid-cols-3 gap-8">
+<div class="service-card p-8 bg-white dark:bg-slate-900 rounded-3xl shadow transition">
+<h3 class="text-2xl font-semibold mb-3">Yoga Therapy</h3>
+<p>Personalized yoga sessions for strength, flexibility and wellness.</p>
+</div>
+<div class="service-card p-8 bg-white dark:bg-slate-900 rounded-3xl shadow transition">
+<h3 class="text-2xl font-semibold mb-3">Meditation</h3>
+<p>Mindfulness and inner balance practices.</p>
+</div>
+<div class="service-card p-8 bg-white dark:bg-slate-900 rounded-3xl shadow transition">
+<h3 class="text-2xl font-semibold mb-3">Sound Healing</h3>
+<p>Relaxation through therapeutic vibrations.</p>
+</div>
+<div class="service-card p-8 bg-white dark:bg-slate-900 rounded-3xl shadow transition">
+<h3 class="text-2xl font-semibold mb-3">Cupping Therapy</h3>
+<p>Traditional detox and healing therapy.</p>
+</div>
+<div class="service-card p-8 bg-white dark:bg-slate-900 rounded-3xl shadow transition">
+<h3 class="text-2xl font-semibold mb-3">Shirodhara</h3>
+<p>Deep relaxation and rejuvenation therapy.</p>
+</div>
+<div class="service-card p-8 bg-white dark:bg-slate-900 rounded-3xl shadow transition">
+<h3 class="text-2xl font-semibold mb-3">Body Detox</h3>
+<p>Natural cleansing and lifestyle correction.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- DEMOS -->
+
+<section id="demos" class="py-24">
+<div class="max-w-7xl mx-auto px-6">
+<h2 class="text-center text-4xl font-bold mb-4">Demo Wellness Plans</h2>
+<p class="text-center max-w-3xl mx-auto mb-14 text-lg text-slate-600 dark:text-slate-300">
+Start with an affordable demo session and choose the right path for yoga, meditation, naturopathy or lifestyle wellness.
+</p>
+
+<div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+<div class="p-8 bg-white dark:bg-slate-900 rounded-3xl shadow-xl border border-purple-100 dark:border-slate-700">
+<p class="uppercase tracking-wide text-sm font-semibold text-purple-700 dark:text-purple-300 mb-2">Intro Demo</p>
+<h3 class="text-3xl font-bold mb-4">&#8377;99 Demo Call</h3>
+<p class="mb-6 leading-8">A quick introductory wellness call to understand your goals and recommend the best consultation path.</p>
+<ul class="space-y-3 mb-8 text-slate-700 dark:text-slate-200">
+<li>&#10003; Wellness concern discussion</li>
+<li>&#10003; Basic lifestyle guidance</li>
+<li>&#10003; Next-step recommendation</li>
+</ul>
+<a href="#contact" data-package="Rs. 99 Demo Call" class="demo-package bg-purple-700 text-white px-8 py-4 rounded-xl inline-block w-full text-center font-semibold">Book &#8377;99 Demo</a>
+</div>
+
+<div class="p-8 bg-purple-700 text-white rounded-3xl shadow-xl">
+<p class="uppercase tracking-wide text-sm font-semibold text-yellow-200 mb-2">Detailed Demo</p>
+<h3 class="text-3xl font-bold mb-4">&#8377;499 Wellness Demo</h3>
+<p class="mb-6 leading-8 text-purple-50">A deeper demo consultation for yoga therapy, meditation, naturopathy and personalized wellness planning.</p>
+<ul class="space-y-3 mb-8">
+<li>&#10003; Detailed wellness assessment</li>
+<li>&#10003; Personalized therapy suggestion</li>
+<li>&#10003; Diet, detox and lifestyle direction</li>
+</ul>
+<a href="#contact" data-package="Rs. 499 Wellness Demo" class="demo-package bg-yellow-500 text-slate-900 px-8 py-4 rounded-xl inline-block w-full text-center font-semibold">Book &#8377;499 Demo</a>
+</div>
+</div>
+</div>
+</section>
+
+<!-- GALLERY -->
+
+<section id="gallery" class="py-24">
+<div class="max-w-7xl mx-auto px-6">
+<h2 class="text-center text-4xl font-bold mb-14">Wellness Gallery</h2>
+<div class="grid md:grid-cols-3 gap-6">
+<img src="images/gallery1.jpeg" class="rounded-3xl shadow-lg hover:scale-105 transition duration-300" alt="Wellness gallery 1">
+<img src="images/gallery2.jpeg" class="rounded-3xl shadow-lg hover:scale-105 transition duration-300" alt="Wellness gallery 2">
+<img src="images/gallery3.jpeg" class="rounded-3xl shadow-lg hover:scale-105 transition duration-300" alt="Wellness gallery 3">
+<img src="images/gallery4.jpeg" class="rounded-3xl shadow-lg hover:scale-105 transition duration-300" alt="Wellness gallery 4">
+<img src="images/gallery5.jpeg" class="rounded-3xl shadow-lg hover:scale-105 transition duration-300" alt="Wellness gallery 5">
+<img src="images/gallery6.jpeg" class="rounded-3xl shadow-lg hover:scale-105 transition duration-300" alt="Wellness gallery 6">
+</div>
+</div>
+</section>
+
+<!-- YOUTUBE -->
+
+<section id="youtube" class="py-24 bg-slate-100 dark:bg-slate-800">
+<div class="max-w-7xl mx-auto px-6">
+<h2 class="text-center text-4xl font-bold mb-14">Latest Wellness Videos</h2>
+<div class="grid md:grid-cols-2 gap-8">
+<div class="aspect-video">
+<iframe class="w-full h-full rounded-3xl" src="https://www.youtube.com/embed/vnClDGfPnNg" title="Sushma Wellness YouTube video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+<div class="flex flex-col justify-center">
+<h3 class="text-2xl font-semibold mb-4">Watch Free Wellness Content</h3>
+<p class="mb-6 leading-8">
+Explore yoga practices, meditation techniques, natural healing methods and holistic wellness guidance through our YouTube channel.
+</p>
+<a href="https://youtube.com/@naturopathicdrsushma424" target="_blank" class="bg-red-600 text-white px-6 py-3 rounded-xl inline-block w-fit">Visit YouTube Channel</a>
+</div>
+</div>
+</div>
+</section>
+
+<!-- TESTIMONIALS -->
+
+<section class="py-24">
+<div class="max-w-7xl mx-auto px-6">
+<h2 class="text-center text-4xl font-bold mb-14">What People Say</h2>
+<div class="grid md:grid-cols-3 gap-8">
+<div class="p-8 rounded-3xl shadow-lg bg-white dark:bg-slate-800">
+<p class="italic">"Dr. Sushma's yoga guidance helped me improve flexibility and reduce stress."</p>
+<h4 class="mt-4 font-semibold">Client Review</h4>
+</div>
+<div class="p-8 rounded-3xl shadow-lg bg-white dark:bg-slate-800">
+<p class="italic">"The naturopathy consultation provided practical lifestyle changes that made a difference."</p>
+<h4 class="mt-4 font-semibold">Client Review</h4>
+</div>
+<div class="p-8 rounded-3xl shadow-lg bg-white dark:bg-slate-800">
+<p class="italic">"Very calming meditation sessions and holistic wellness approach."</p>
+<h4 class="mt-4 font-semibold">Client Review</h4>
+</div>
+</div>
+</div>
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact" class="py-24 bg-slate-100 dark:bg-slate-800">
+<div class="max-w-7xl mx-auto px-6">
+<h2 class="text-center text-4xl font-bold mb-14">Book Consultation</h2>
+<div class="grid md:grid-cols-2 gap-12">
+<div>
+<h3 class="text-2xl font-semibold mb-6">Contact Information</h3>
+<p class="mb-4">&#128222; +91 97691 27193</p>
+<p class="mb-4">&#128231; naturopathdrsushma@gmail.com</p>
+<p class="mb-6">Available for Yoga, Meditation and Naturopathy Consultation.</p>
+<div class="flex gap-4 flex-wrap">
+<a href="https://instagram.com/naturopathdrsushma424" target="_blank" class="bg-pink-600 text-white px-5 py-3 rounded-xl">Instagram</a>
+<a href="https://linkedin.com/in/natutopathdrsushma" target="_blank" class="bg-blue-700 text-white px-5 py-3 rounded-xl">LinkedIn</a>
+<a href="https://youtube.com/@naturopathicdrsushma424" target="_blank" class="bg-red-600 text-white px-5 py-3 rounded-xl">YouTube</a>
+</div>
+</div>
+
+<form id="inquiryForm" class="bg-white dark:bg-slate-900 p-8 rounded-3xl shadow-xl">
+<input type="text" name="name" placeholder="Your Name" required class="w-full p-4 mb-4 rounded-xl border dark:bg-slate-800">
+<input type="email" name="email" placeholder="Your Email" required class="w-full p-4 mb-4 rounded-xl border dark:bg-slate-800">
+<input type="tel" name="phone" placeholder="Phone Number" required class="w-full p-4 mb-4 rounded-xl border dark:bg-slate-800">
+<select name="package" class="w-full p-4 mb-4 rounded-xl border dark:bg-slate-800">
+<option value="">Select Demo / Consultation</option>
+<option value="Rs. 99 Demo Call">Rs. 99 Demo Call</option>
+<option value="Rs. 499 Wellness Demo">Rs. 499 Wellness Demo</option>
+<option value="General Consultation">General Consultation</option>
+</select>
+<textarea rows="5" name="message" placeholder="Your Message" class="w-full p-4 mb-4 rounded-xl border dark:bg-slate-800"></textarea>
+<p id="formStatus" class="hidden mb-4 text-sm font-medium" aria-live="polite"></p>
+<a id="emailFallback" href="mailto:naturopathdrsushma@gmail.com" class="hidden mb-4 text-sm font-semibold text-purple-700 dark:text-purple-300 underline">Send by email instead</a>
+<button id="inquirySubmit" type="submit" class="bg-purple-700 text-white px-8 py-4 rounded-xl w-full">Send Enquiry</button>
+</form>
+</div>
+</div>
+</section>
+
+<!-- FOOTER -->
+
+<footer class="bg-slate-900 text-white py-10">
+<div class="max-w-7xl mx-auto px-6 text-center">
+<img src="images/logo.png" class="h-16 mx-auto mb-4" alt="Sushma Wellness logo">
+<h3 class="text-2xl font-semibold">Sushma Wellness</h3>
+<p class="mt-3 text-slate-300">Heal Naturally. Live Fully. Transform Completely.</p>
+<p class="mt-6 text-sm text-slate-400">&copy; 2026 Sushma Wellness. All Rights Reserved.</p>
+</div>
+</footer>
+
+<!-- WHATSAPP BUTTON -->
+
+<a href="https://wa.me/919769127193" target="_blank" class="fixed bottom-6 right-6 bg-green-500 text-white h-16 w-16 rounded-full flex items-center justify-center shadow-2xl text-3xl z-50" aria-label="Chat on WhatsApp">
+&#128172;
+</a>
+
+<!-- JAVASCRIPT -->
+
+<script>
+const themeBtn =
+document.getElementById('themeBtn');
+
+themeBtn.addEventListener('click',()=>{
+document.documentElement.classList.toggle('dark');
+
+if(document.documentElement.classList.contains('dark')){
+localStorage.theme='dark';
+themeBtn.innerHTML='&#9728;&#65039;';
+}else{
+localStorage.theme='light';
+themeBtn.innerHTML='&#127769;';
+}
+});
+
+if(localStorage.theme==='dark'){
+document.documentElement.classList.add('dark');
+themeBtn.innerHTML='&#9728;&#65039;';
+}
+
+const menuBtn =
+document.getElementById('menuBtn');
+
+const mobileMenu =
+document.getElementById('mobileMenu');
+
+menuBtn.addEventListener('click',()=>{
+mobileMenu.classList.toggle('hidden');
+});
+
+const observer =
+new IntersectionObserver(entries=>{
+entries.forEach(entry=>{
+if(entry.isIntersecting){
+entry.target.classList.add('show');
+}
+});
+});
+
+document.querySelectorAll('.fade').forEach(el=>{
+observer.observe(el);
+});
+
+const inquiryForm =
+document.getElementById('inquiryForm');
+
+const formStatus =
+document.getElementById('formStatus');
+
+const emailFallback =
+document.getElementById('emailFallback');
+
+const inquirySubmit =
+document.getElementById('inquirySubmit');
+
+document.querySelectorAll('.demo-package').forEach(button=>{
+button.addEventListener('click',()=>{
+const packageSelect =
+inquiryForm.elements.package;
+
+packageSelect.value =
+button.dataset.package;
+
+inquiryForm.elements.message.value =
+`I want to book the ${packageSelect.value}. Please share available slots.`;
+});
+});
+
+inquiryForm.addEventListener('submit',event=>{
+event.preventDefault();
+
+if(!inquiryForm.checkValidity()){
+inquiryForm.reportValidity();
+return;
+}
+
+const formData =
+new FormData(inquiryForm);
+
+const name =
+String(formData.get('name')).trim();
+
+const email =
+String(formData.get('email')).trim();
+
+const phone =
+String(formData.get('phone')).trim();
+
+const userMessage =
+String(formData.get('message')).trim() || 'Please contact me with more details.';
+
+const packageName =
+formData.get('package') || 'General Consultation';
+
+const messageLines = [
+'Hello Dr. Sushma, I want to send an enquiry.',
+`Name: ${name}`,
+`Email: ${email}`,
+`Phone: ${phone}`,
+`Package: ${packageName}`,
+`Message: ${userMessage}`
+];
+
+const enquiryText =
+messageLines.join('\n');
+
+const whatsappUrl =
+`https://api.whatsapp.com/send?phone=919769127193&text=${encodeURIComponent(enquiryText)}`;
+
+const emailUrl =
+`mailto:naturopathdrsushma@gmail.com?subject=${encodeURIComponent(`Sushma Wellness Enquiry - ${packageName}`)}&body=${encodeURIComponent(enquiryText)}`;
+
+emailFallback.href =
+emailUrl;
+
+emailFallback.className =
+'block mb-4 text-sm font-semibold text-purple-700 dark:text-purple-300 underline';
+
+formStatus.className =
+'mb-4 text-sm font-medium text-green-700 dark:text-green-300';
+
+formStatus.textContent =
+'Opening WhatsApp with your enquiry details. If it does not open, use the email link below.';
+
+inquirySubmit.textContent =
+'Opening WhatsApp...';
+
+window.location.href =
+whatsappUrl;
+});
+</script>
+
+</body>
+</html>
